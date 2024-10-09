@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<!-- heading.html -->
+<!-- visualizing heading elements h1 to h6. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Q4 Answer</title>
+   </head>
+   <body>
+   <h1>
+   Favorite Concert in Dubai
+   </h1>
+   <form action="http://www.deitel.com" method="POST">
+   <table>
+   <tr>
+   <td>
+   <label for="email">Email:</label> </td>
+   <td><input type="email" id="email" name="email" required></td>
+   </tr>
+   <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required></td>
+            </tr>
+   <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+   <tr>
+                <td><label for="location">Preferred Location:</label></td>
+                <td>
+                    <select id="location" name="location" required>
+                        <option value="atlantis">Atlantis The Palm</option>
+                        <option value="burj-al-arab" selected>Burj Al Arab</option>
+                        <option value="jumeirah-beach-hotel">Jumeirah Beach Hotel</option>
+                        <option value="palace-downtown">Palace Downtown</option>
+                        <option value="rose-rayhaan">Rose Rayhaan by Rotana</option>
+                    </select>
+                </td>
+            </tr>
+             <tr>
+                <td><label for="date">Preferred Date:</label></td>
+                <td><input type="date" id="date" name="date" required></td>
+            </tr>
+       <tr>
+                <td><label>Concert Type:</label></td>
+                <td>
+                    <input type="radio" id="pop" name="concert_type" value="pop" required>
+                    <label for="pop">Pop</label><br>
+                    <input type="radio" id="rock" name="concert_type" value="rock" required>
+                    <label for="rock">Rock</label><br>
+                    <input type="radio" id="jazz" name="concert_type" value="jazz" required>
+                    <label for="jazz">Jazz</label><br>
+                    <input type="radio" id="classical" name="concert_type" value="classical" required>
+                    <label for="classical">Classical</label><br>
+                </td>
+            </tr>
+    <tr>
+                <td><label>Additional Preferences:</label></td>
+                <td>
+                    <input type="checkbox" id="vip" name="preferences" value="vip">
+                    <label for="vip">VIP</label><br>
+                    <input type="checkbox" id="front-row" name="preferences" value="front-row">
+                    <label for="front-row">Front Row</label><br>
+                    <input type="checkbox" id="meet-greet" name="preferences" value="meet-greet">
+                    <label for="meet-greet">Meet & Greet</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="comments">Additional Comments:</label></td>
+                <td><textarea id="comments" name="comments" rows="4" cols="50"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+   </table>
+      
+   </body>
+</html>
